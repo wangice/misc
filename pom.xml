@@ -10,12 +10,22 @@
   <packaging>jar</packaging>
 
   <properties>
+    <junit.version>4.12</junit.version>
     <protobuf.version>3.6.0</protobuf.version>
     <protobuf.format.version>1.4</protobuf.format.version>
     <slf4j.version>1.7.25</slf4j.version>
+    <xstream.version>1.4.10</xstream.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
@@ -37,6 +47,13 @@
       <artifactId>protobuf-java-format</artifactId>
       <version>${protobuf.format.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>${xstream.version}</version>
+    </dependency>
+
   </dependencies>
 
   <build>
